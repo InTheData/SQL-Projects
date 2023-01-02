@@ -1,3 +1,8 @@
+/*
+Hotel Revenue Exploration 
+Skills used: Unions and Joins
+*/
+
 --Bringing key tables together with UNION operator.
 
 WITH hotels AS (
@@ -26,4 +31,4 @@ ON hotels.market_segment = market_segment$.market_segment
 LEFT JOIN dbo.meal_cost$
 ON meal_cost$.meal = hotels.meal
 
---The above query has been pulled into Power Bi.
+--The above query has been pulled into Power Bi for further exploration and dashboard creation.
